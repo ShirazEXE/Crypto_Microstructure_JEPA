@@ -1,6 +1,6 @@
 # 🪙 Crypto Trading Pipeline
 
-A high-frequency cryptocurrency trading pipeline that collects real-time market data using WebSockets, performs feature engineering, and predicts price movements using an LSTM-based machine learning model. This project includes a web interface and a FastAPI backend for serving predictions and interacting with the system.
+A high-frequency cryptocurrency trading pipeline that collects real-time market data using WebSockets, performs feature engineering, and predicts price movements using an Self-Supervised, Energy-Based(EBM) machine learning model with Joint Embedding Predictive Architecture(JEPA) and Model Predictive Control (MPC). This project includes a web interface and a FastAPI backend for serving predictions and interacting with the system.
 
 ---
 
