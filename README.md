@@ -21,7 +21,7 @@ A high-frequency cryptocurrency trading pipeline that collects real-time market 
 
 * 📡 Real-time WebSocket data collection from Binance
 * 📊 Tick-level market data processing with feature extraction
-* 🤖 LSTM-based model for price prediction
+* 🤖 JEPA-based model for price prediction
 * 🖥️ FastAPI backend to expose prediction endpoints
 * 🌐 Web-based frontend interface (HTML)
 * 📓 Efficient data storage and model persistence using `joblib`
@@ -57,7 +57,7 @@ Open `index.html` in your browser to interact with the system.
 
 ## 🧠 Model Overview
 
-The model is built using PyTorch and implements a Long Short-Term Memory (LSTM) architecture to predict short-term price movements based on historical market features like:
+The model is built using PyTorch and implements a Long Short-Term Memory (JEPA) architecture to predict short-term price movements based on historical market features like:
 
 * Price changes
 * Order book deltas
