@@ -1,4 +1,11 @@
-python-decouple
+websocket-client
+pandas
+numpy
+torch
 python-binance
-psycopg2-binary
-websockets
+scikit-learn
+joblib
+uvicorn
+fastapi
+aiofiles
+nest-asyncio
