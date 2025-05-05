@@ -1,83 +1,99 @@
-🪙 Crypto Trading Pipeline
+# 🪙 Crypto Trading Pipeline
+
 A high-frequency cryptocurrency trading pipeline that collects real-time market data using WebSockets, performs feature engineering, and predicts price movements using an LSTM-based machine learning model. This project includes a web interface and a FastAPI backend for serving predictions and interacting with the system.
 
-📂 Project Structure
-plaintext
-Copy
-Edit
+---
+
+## 📂 Project Structure
+
+```
 .
 ├── crypto_trading_pipeline.py   # Main trading pipeline: data collection, processing, and prediction
 ├── main.py                      # FastAPI backend for serving model predictions
 ├── index.html                   # Simple frontend UI for interaction
 ├── requirements.txt             # Python dependencies
 └── README.md                    # Project documentation
-⚙️ Features
-📡 Real-time WebSocket data collection from Binance
+```
 
-📊 Tick-level market data processing with feature extraction
+---
 
-🤖 LSTM-based model for price prediction
+## ⚙️ Features
 
-🖥️ FastAPI backend to expose prediction endpoints
+* 📡 Real-time WebSocket data collection from Binance
+* 📊 Tick-level market data processing with feature extraction
+* 🤖 LSTM-based model for price prediction
+* 🖥️ FastAPI backend to expose prediction endpoints
+* 🌐 Web-based frontend interface (HTML)
+* 📓 Efficient data storage and model persistence using `joblib`
 
-🌐 Web-based frontend interface (HTML)
+---
 
-🗃️ Efficient data storage and model persistence using joblib
+## 🚀 Getting Started
 
-🚀 Getting Started
-1. Clone the repository
-bash
-Copy
-Edit
+### 1. Clone the repository
+
+```bash
 git clone https://github.com/yourusername/crypto-trading-pipeline.git
 cd crypto-trading-pipeline
-2. Install dependencies
-bash
-Copy
-Edit
-pip install -r requirements.txt
-3. Run the backend server
-bash
-Copy
-Edit
-uvicorn main:app --reload
-4. Open the frontend
-Open index.html in your browser to interact with the system.
+```
 
-🧠 Model Overview
+### 2. Install dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+### 3. Run the backend server
+
+```bash
+uvicorn main:app --reload
+```
+
+### 4. Open the frontend
+
+Open `index.html` in your browser to interact with the system.
+
+---
+
+## 🧠 Model Overview
+
 The model is built using PyTorch and implements a Long Short-Term Memory (LSTM) architecture to predict short-term price movements based on historical market features like:
 
-Price changes
+* Price changes
+* Order book deltas
+* Trade volumes
 
-Order book deltas
+---
 
-Trade volumes
+## 🛠️ API Endpoints
 
-🛠️ API Endpoints
-Method	Endpoint	Description
-GET	/	Returns HTML interface
-POST	/predict	Returns price movement prediction
+| Method | Endpoint   | Description                       |
+| ------ | ---------- | --------------------------------- |
+| GET    | `/`        | Returns HTML interface            |
+| POST   | `/predict` | Returns price movement prediction |
 
-📦 Requirements
-See requirements.txt for the full list of dependencies, including:
+---
 
-websocket-client
+## 📦 Requirements
 
-python-binance
+See [`requirements.txt`](requirements.txt) for the full list of dependencies, including:
 
-torch
+* `websocket-client`
+* `python-binance`
+* `torch`
+* `pandas`, `numpy`
+* `fastapi`, `uvicorn`
 
-pandas, numpy
+---
 
-fastapi, uvicorn
+## 📌 Notes
 
-📌 Notes
-Ensure you have access to Binance API if using secured endpoints.
+* Ensure you have access to Binance API if using secured endpoints.
+* The model is currently trained on simulated or historic data and may require fine-tuning for live trading.
+* For actual trading integration, risk management modules should be added.
 
-The model is currently trained on simulated or historic data and may require fine-tuning for live trading.
+---
 
-For actual trading integration, risk management modules should be added.
+## 📄 License
 
-📄 License
-This project is open-source and available under the MIT License.
-
+This project is open-source and available under the [MIT License](LICENSE).
